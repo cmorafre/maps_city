@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b443fd89a2ecc6f0cd268ed2f164c28c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b443fd89a2ecc6f0cd268ed2f164c28c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b443fd89a2ecc6f0cd268ed2f164c28c = L.map(
+                "map_b443fd89a2ecc6f0cd268ed2f164c28c",
+                {
+                    center: [-6.45056, -36.2057],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89603849f56fd744c37ff8c9298faf62 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_89603849f56fd744c37ff8c9298faf62.addTo(map_b443fd89a2ecc6f0cd268ed2f164c28c);
+        
+    
+        function geo_json_4682de2a61f2c78deb100b755bce8d08_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_4682de2a61f2c78deb100b755bce8d08_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_4682de2a61f2c78deb100b755bce8d08 = L.geoJson(null, {
+                onEachFeature: geo_json_4682de2a61f2c78deb100b755bce8d08_onEachFeature,
+            
+                style: geo_json_4682de2a61f2c78deb100b755bce8d08_styler,
+            ...{
+}
+        });
+
+        function geo_json_4682de2a61f2c78deb100b755bce8d08_add (data) {
+            geo_json_4682de2a61f2c78deb100b755bce8d08
+                .addData(data);
+        }
+            geo_json_4682de2a61f2c78deb100b755bce8d08_add({"features": [{"geometry": {"coordinates": [[[-36.1948481, -6.4309314], [-36.1885159, -6.4323214], [-36.1803454, -6.4303577], [-36.1754433, -6.4308248], [-36.1744649, -6.4307646], [-36.1744828, -6.430876], [-36.1744338, -6.4310341], [-36.1744767, -6.4311738], [-36.1744878, -6.4313101], [-36.180463, -6.4700641], [-36.2247075, -6.5586302], [-36.225064, -6.5593667], [-36.2250702, -6.5584508], [-36.2256035, -6.5142542], [-36.225943, -6.4856703], [-36.2258168, -6.4836618], [-36.2261554, -6.4676216], [-36.2263273, -6.4530891], [-36.2263273, -6.4530788], [-36.2265349, -6.4340281], [-36.2117451, -6.4328312], [-36.2060293, -6.4323687], [-36.2041876, -6.4322196], [-36.2038347, -6.4321912], [-36.2038124, -6.4321893], [-36.1995225, -6.4318421], [-36.1956806, -6.4310935], [-36.1948481, -6.4309314]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_4682de2a61f2c78deb100b755bce8d08.addTo(map_b443fd89a2ecc6f0cd268ed2f164c28c);
+        
+    
+            map_b443fd89a2ecc6f0cd268ed2f164c28c.fitBounds(
+                [[-6.5593667, -36.2265349], [-6.4303577, -36.1744338]],
+                {}
+            );
+        
+    
+            var marker_50ba3b1e5956a917548b382aee63e2ad = L.marker(
+                [-6.45056, -36.2057],
+                {
+}
+            ).addTo(map_b443fd89a2ecc6f0cd268ed2f164c28c);
+        
+    
+        var popup_37313eb829f1baf9bcf8afc06c6efada = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9e8d2a26f7984401616e5c8be79c3be = $(`<div id="html_e9e8d2a26f7984401616e5c8be79c3be" style="width: 100.0%; height: 100.0%;">NOVA FLORESTA</div>`)[0];
+                popup_37313eb829f1baf9bcf8afc06c6efada.setContent(html_e9e8d2a26f7984401616e5c8be79c3be);
+            
+        
+
+        marker_50ba3b1e5956a917548b382aee63e2ad.bindPopup(popup_37313eb829f1baf9bcf8afc06c6efada)
+        ;
+
+        
+    
+    
+            marker_50ba3b1e5956a917548b382aee63e2ad.bindTooltip(
+                `<div>
+                     NOVA FLORESTA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

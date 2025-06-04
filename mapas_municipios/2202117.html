@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_57413df7aa00800e5bf240c5472d2c34 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_57413df7aa00800e5bf240c5472d2c34" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_57413df7aa00800e5bf240c5472d2c34 = L.map(
+                "map_57413df7aa00800e5bf240c5472d2c34",
+                {
+                    center: [-8.38236, -41.8344],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_528d1d63030e94c7c983e125e8641fab = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_528d1d63030e94c7c983e125e8641fab.addTo(map_57413df7aa00800e5bf240c5472d2c34);
+        
+    
+        function geo_json_dec7a4ed5436c7982e23c30f2f4ed0e2_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_dec7a4ed5436c7982e23c30f2f4ed0e2_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_dec7a4ed5436c7982e23c30f2f4ed0e2 = L.geoJson(null, {
+                onEachFeature: geo_json_dec7a4ed5436c7982e23c30f2f4ed0e2_onEachFeature,
+            
+                style: geo_json_dec7a4ed5436c7982e23c30f2f4ed0e2_styler,
+            ...{
+}
+        });
+
+        function geo_json_dec7a4ed5436c7982e23c30f2f4ed0e2_add (data) {
+            geo_json_dec7a4ed5436c7982e23c30f2f4ed0e2
+                .addData(data);
+        }
+            geo_json_dec7a4ed5436c7982e23c30f2f4ed0e2_add({"features": [{"geometry": {"coordinates": [[[-41.7352854, -8.4002804], [-41.8429695, -8.3999901], [-41.843386, -8.399989], [-41.920709, -8.3997805], [-41.923766, -8.3997723], [-41.9273633, -8.3997626], [-41.9371589, -8.3997333], [-41.9496218, -8.3733385], [-41.9575527, -8.372728], [-41.9528355, -8.3566418], [-41.9526237, -8.3559198], [-41.9291807, -8.276004], [-41.9240684, -8.2566951], [-41.9217765, -8.2480475], [-41.8951962, -8.1477554], [-41.8951667, -8.147644], [-41.8916663, -8.134445], [-41.8826142, -8.1317002], [-41.8820067, -8.131516], [-41.8399589, -8.1187653], [-41.8322134, -8.1205404], [-41.8273123, -8.1196954], [-41.8175101, -8.1174138], [-41.813285, -8.1169068], [-41.8013702, -8.1168223], [-41.7956241, -8.1168223], [-41.7859909, -8.1185124], [-41.7772872, -8.1169068], [-41.7501621, -8.0924013], [-41.7399513, -8.0884386], [-41.7766332, -8.1209359], [-41.7756294, -8.1233235], [-41.7754493, -8.1246355], [-41.7747744, -8.1264214], [-41.7739153, -8.1305677], [-41.771887, -8.1350917], [-41.769367, -8.1382167], [-41.7666774, -8.1405659], [-41.7639371, -8.1434392], [-41.7595392, -8.1535152], [-41.7554165, -8.1606628], [-41.75149, -8.1626575], [-41.7449879, -8.1627437], [-41.7394098, -8.1618691], [-41.7352209, -8.1619565], [-41.7320302, -8.1632888], [-41.7296351, -8.167425], [-41.7288916, -8.171519], [-41.7310552, -8.1757602], [-41.7347708, -8.1791701], [-41.7433968, -8.1815111], [-41.7674099, -8.2057959], [-41.7681556, -8.2065501], [-41.7834681, -8.2220368], [-41.7831105, -8.2513175], [-41.7714687, -8.2900996], [-41.7493975, -8.3120619], [-41.7472502, -8.30933], [-41.7450465, -8.3081038], [-41.7427639, -8.3061808], [-41.7399367, -8.3043901], [-41.7355964, -8.302199], [-41.7335146, -8.300736], [-41.731372, -8.299732], [-41.7294698, -8.2986795], [-41.723951, -8.2970554], [-41.7226253, -8.2955205], [-41.7206682, -8.2944523], [-41.7176186, -8.294969], [-41.7143188, -8.2952676], [-41.7105545, -8.2934505], [-41.7062211, -8.2908166], [-41.6961858, -8.2843375], [-41.6917389, -8.2796049], [-41.691085, -8.2762356], [-41.6898429, -8.2739817], [-41.689349, -8.2740039], [-41.6893449, -8.2740041], [-41.6888425, -8.2740267], [-41.6857732, -8.2741651], [-41.6807339, -8.2783099], [-41.6769264, -8.2838211], [-41.6662154, -8.2910885], [-41.6571062, -8.2990033], [-41.6606605, -8.3045739], [-41.6769812, -8.3285097], [-41.6696639, -8.350294], [-41.6733316, -8.390172], [-41.6735426, -8.392466], [-41.7269788, -8.4003007], [-41.7349355, -8.4002813], [-41.7352854, -8.4002804]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_dec7a4ed5436c7982e23c30f2f4ed0e2.addTo(map_57413df7aa00800e5bf240c5472d2c34);
+        
+    
+            map_57413df7aa00800e5bf240c5472d2c34.fitBounds(
+                [[-8.4003007, -41.9575527], [-8.0884386, -41.6571062]],
+                {}
+            );
+        
+    
+            var marker_775fad9d8037c2f864f80af6a23d6c87 = L.marker(
+                [-8.38236, -41.8344],
+                {
+}
+            ).addTo(map_57413df7aa00800e5bf240c5472d2c34);
+        
+    
+        var popup_ce227b51dce555a1486b9073fe1171f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1037827a9038a097c59da95e0be63405 = $(`<div id="html_1037827a9038a097c59da95e0be63405" style="width: 100.0%; height: 100.0%;">CAMPO ALEGRE DO FIDALGO</div>`)[0];
+                popup_ce227b51dce555a1486b9073fe1171f5.setContent(html_1037827a9038a097c59da95e0be63405);
+            
+        
+
+        marker_775fad9d8037c2f864f80af6a23d6c87.bindPopup(popup_ce227b51dce555a1486b9073fe1171f5)
+        ;
+
+        
+    
+    
+            marker_775fad9d8037c2f864f80af6a23d6c87.bindTooltip(
+                `<div>
+                     CAMPO ALEGRE DO FIDALGO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

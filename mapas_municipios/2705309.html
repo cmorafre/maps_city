@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_64b962cc9ccecd40d72c02522affe1fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_64b962cc9ccecd40d72c02522affe1fd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_64b962cc9ccecd40d72c02522affe1fd = L.map(
+                "map_64b962cc9ccecd40d72c02522affe1fd",
+                {
+                    center: [-9.31236, -36.8696],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8954da3ea0fdf7cdbafb187835e852ff = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8954da3ea0fdf7cdbafb187835e852ff.addTo(map_64b962cc9ccecd40d72c02522affe1fd);
+        
+    
+        function geo_json_deff5527bcf9311af2650240042cf253_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_deff5527bcf9311af2650240042cf253_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_deff5527bcf9311af2650240042cf253 = L.geoJson(null, {
+                onEachFeature: geo_json_deff5527bcf9311af2650240042cf253_onEachFeature,
+            
+                style: geo_json_deff5527bcf9311af2650240042cf253_styler,
+            ...{
+}
+        });
+
+        function geo_json_deff5527bcf9311af2650240042cf253_add (data) {
+            geo_json_deff5527bcf9311af2650240042cf253
+                .addData(data);
+        }
+            geo_json_deff5527bcf9311af2650240042cf253_add({"features": [{"geometry": {"coordinates": [[[-36.8254415, -9.2864103], [-36.7968326, -9.2804232], [-36.7971463, -9.2930229], [-36.7971504, -9.2933403], [-36.7971549, -9.2936585], [-36.7971556, -9.2937123], [-36.7978906, -9.345815], [-36.7981413, -9.347282], [-36.7982085, -9.3476753], [-36.7983114, -9.350612], [-36.7968053, -9.3564724], [-36.79811, -9.3600275], [-36.8029169, -9.3680532], [-36.8257603, -9.3902067], [-36.8265364, -9.3909593], [-36.8542405, -9.3922584], [-36.8546659, -9.3922784], [-36.865141, -9.3927696], [-36.8722954, -9.3937571], [-36.8752358, -9.394163], [-36.8904765, -9.3962662], [-36.8940234, -9.3967557], [-36.8975404, -9.3972411], [-36.9014221, -9.3977768], [-36.9368499, -9.3774254], [-36.9332537, -9.3744187], [-36.9310996, -9.3715815], [-36.9304372, -9.3700363], [-36.9367676, -9.3612142], [-36.9384027, -9.355677], [-36.937877, -9.3528213], [-36.9365515, -9.3498863], [-36.9350583, -9.3487494], [-36.9300312, -9.3469993], [-36.9300294, -9.3469989], [-36.925347, -9.3436326], [-36.9222702, -9.3397619], [-36.9210285, -9.3355177], [-36.9209434, -9.3324874], [-36.9227668, -9.3299822], [-36.9249703, -9.3288388], [-36.9267882, -9.3272059], [-36.9273155, -9.3254111], [-36.9267626, -9.3228919], [-36.9223204, -9.3181658], [-36.9216163, -9.3147706], [-36.9216834, -9.3136122], [-36.9217527, -9.3124031], [-36.9217633, -9.3122176], [-36.9218186, -9.3112548], [-36.921415, -9.3095578], [-36.9180584, -9.3047866], [-36.9158205, -9.2990208], [-36.9137785, -9.2961758], [-36.9136922, -9.2960556], [-36.9008277, -9.2829084], [-36.8979454, -9.2811981], [-36.8897937, -9.2836387], [-36.8850817, -9.2813713], [-36.8849974, -9.2813307], [-36.8849225, -9.2812948], [-36.8841334, -9.280915], [-36.8797485, -9.2788041], [-36.8797469, -9.2788035], [-36.8747725, -9.2769608], [-36.8797816, -9.2763747], [-36.875078, -9.274348], [-36.8729627, -9.2686826], [-36.8712612, -9.2680848], [-36.8712594, -9.2680846], [-36.8674712, -9.2685314], [-36.8674694, -9.2685315], [-36.8658142, -9.2698179], [-36.8644497, -9.2698099], [-36.8644478, -9.2698098], [-36.8583522, -9.2726682], [-36.8576728, -9.2733615], [-36.856789, -9.272829], [-36.8560157, -9.2729085], [-36.8560139, -9.2729086], [-36.8531993, -9.2761514], [-36.8503911, -9.2758725], [-36.84837, -9.2766952], [-36.8467767, -9.2777067], [-36.8445694, -9.2816794], [-36.844201, -9.2823424], [-36.8408371, -9.2851556], [-36.8402464, -9.2875787], [-36.8397124, -9.2882139], [-36.8397106, -9.288214], [-36.8378991, -9.2884187], [-36.8371477, -9.2885036], [-36.8360412, -9.2886286], [-36.8254415, -9.2864103]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_deff5527bcf9311af2650240042cf253.addTo(map_64b962cc9ccecd40d72c02522affe1fd);
+        
+    
+            map_64b962cc9ccecd40d72c02522affe1fd.fitBounds(
+                [[-9.3977768, -36.9384027], [-9.2680846, -36.7968053]],
+                {}
+            );
+        
+    
+            var marker_d5d3adb9fa32fe2a8755ab2a11725745 = L.marker(
+                [-9.31236, -36.8696],
+                {
+}
+            ).addTo(map_64b962cc9ccecd40d72c02522affe1fd);
+        
+    
+        var popup_9d4e4edb995cec9fce9c42e29d859de1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26e333f21a601060ad149d3d8c435e09 = $(`<div id="html_26e333f21a601060ad149d3d8c435e09" style="width: 100.0%; height: 100.0%;">MINADOR DO NEGRÃO</div>`)[0];
+                popup_9d4e4edb995cec9fce9c42e29d859de1.setContent(html_26e333f21a601060ad149d3d8c435e09);
+            
+        
+
+        marker_d5d3adb9fa32fe2a8755ab2a11725745.bindPopup(popup_9d4e4edb995cec9fce9c42e29d859de1)
+        ;
+
+        
+    
+    
+            marker_d5d3adb9fa32fe2a8755ab2a11725745.bindTooltip(
+                `<div>
+                     MINADOR DO NEGRÃO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_88c87b10ecdde14db489cfeccc5ec4fb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_88c87b10ecdde14db489cfeccc5ec4fb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_88c87b10ecdde14db489cfeccc5ec4fb = L.map(
+                "map_88c87b10ecdde14db489cfeccc5ec4fb",
+                {
+                    center: [-6.39949, -38.324],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f966480fb889ca66deae7402efab93a8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f966480fb889ca66deae7402efab93a8.addTo(map_88c87b10ecdde14db489cfeccc5ec4fb);
+        
+    
+        function geo_json_c3ab352d5db86f0f08602ac5b23aa824_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_c3ab352d5db86f0f08602ac5b23aa824_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_c3ab352d5db86f0f08602ac5b23aa824 = L.geoJson(null, {
+                onEachFeature: geo_json_c3ab352d5db86f0f08602ac5b23aa824_onEachFeature,
+            
+                style: geo_json_c3ab352d5db86f0f08602ac5b23aa824_styler,
+            ...{
+}
+        });
+
+        function geo_json_c3ab352d5db86f0f08602ac5b23aa824_add (data) {
+            geo_json_c3ab352d5db86f0f08602ac5b23aa824
+                .addData(data);
+        }
+            geo_json_c3ab352d5db86f0f08602ac5b23aa824_add({"features": [{"geometry": {"coordinates": [[[-38.3437965, -6.4353536], [-38.3437581, -6.435225], [-38.3405854, -6.4246131], [-38.3392883, -6.3871715], [-38.3391825, -6.3841233], [-38.3365803, -6.3742009], [-38.3346161, -6.3755992], [-38.3245348, -6.3797905], [-38.3213312, -6.3824204], [-38.3166429, -6.3838265], [-38.3147957, -6.3836127], [-38.3133693, -6.3812168], [-38.3095146, -6.3776673], [-38.3051894, -6.3775203], [-38.3022728, -6.378456], [-38.3021395, -6.3784992], [-38.3018985, -6.3785765], [-38.2988931, -6.3795411], [-38.2983518, -6.3795139], [-38.2752583, -6.3783546], [-38.2866993, -6.3917571], [-38.2881919, -6.396942], [-38.2892135, -6.3986578], [-38.2917181, -6.4018738], [-38.2976324, -6.4064384], [-38.2989116, -6.4168334], [-38.2995872, -6.4184485], [-38.3068367, -6.4260803], [-38.34758, -6.4480136], [-38.3437965, -6.4353536]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_c3ab352d5db86f0f08602ac5b23aa824.addTo(map_88c87b10ecdde14db489cfeccc5ec4fb);
+        
+    
+            map_88c87b10ecdde14db489cfeccc5ec4fb.fitBounds(
+                [[-6.4480136, -38.34758], [-6.3742009, -38.2752583]],
+                {}
+            );
+        
+    
+            var marker_f22b798fb2735e1869d6c0ffcf768636 = L.marker(
+                [-6.39949, -38.324],
+                {
+}
+            ).addTo(map_88c87b10ecdde14db489cfeccc5ec4fb);
+        
+    
+        var popup_84cb736d7f553f51cd58a63e56ef5816 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8882db3dd16ef37b87e94e3cc7d94228 = $(`<div id="html_8882db3dd16ef37b87e94e3cc7d94228" style="width: 100.0%; height: 100.0%;">MAJOR SALES</div>`)[0];
+                popup_84cb736d7f553f51cd58a63e56ef5816.setContent(html_8882db3dd16ef37b87e94e3cc7d94228);
+            
+        
+
+        marker_f22b798fb2735e1869d6c0ffcf768636.bindPopup(popup_84cb736d7f553f51cd58a63e56ef5816)
+        ;
+
+        
+    
+    
+            marker_f22b798fb2735e1869d6c0ffcf768636.bindTooltip(
+                `<div>
+                     MAJOR SALES
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

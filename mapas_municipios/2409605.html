@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_19963c88815a614fa485af3da4f96c56 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_19963c88815a614fa485af3da4f96c56" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_19963c88815a614fa485af3da4f96c56 = L.map(
+                "map_19963c88815a614fa485af3da4f96c56",
+                {
+                    center: [-5.57352, -36.1084],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e8f99180959e1a37a4eac6ca3d67878e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e8f99180959e1a37a4eac6ca3d67878e.addTo(map_19963c88815a614fa485af3da4f96c56);
+        
+    
+        function geo_json_df099586c05c26e95c0fbf6850a9d048_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_df099586c05c26e95c0fbf6850a9d048_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_df099586c05c26e95c0fbf6850a9d048 = L.geoJson(null, {
+                onEachFeature: geo_json_df099586c05c26e95c0fbf6850a9d048_onEachFeature,
+            
+                style: geo_json_df099586c05c26e95c0fbf6850a9d048_styler,
+            ...{
+}
+        });
+
+        function geo_json_df099586c05c26e95c0fbf6850a9d048_add (data) {
+            geo_json_df099586c05c26e95c0fbf6850a9d048
+                .addData(data);
+        }
+            geo_json_df099586c05c26e95c0fbf6850a9d048_add({"features": [{"geometry": {"coordinates": [[[-36.112822, -5.6155314], [-36.1379028, -5.5956893], [-36.143165, -5.591526], [-36.1436944, -5.5669364], [-36.1719788, -5.5446795], [-36.1409006, -5.5002395], [-36.1285469, -5.4568166], [-36.0633023, -5.4053987], [-36.0280203, -5.4448549], [-36.0276707, -5.4452451], [-35.9924082, -5.4637876], [-36.0564134, -5.6385474], [-36.0625348, -5.6552868], [-36.112822, -5.6155314]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_df099586c05c26e95c0fbf6850a9d048.addTo(map_19963c88815a614fa485af3da4f96c56);
+        
+    
+            map_19963c88815a614fa485af3da4f96c56.fitBounds(
+                [[-5.6552868, -36.1719788], [-5.4053987, -35.9924082]],
+                {}
+            );
+        
+    
+            var marker_ed2af66ace95e836125a8afa2a2e670a = L.marker(
+                [-5.57352, -36.1084],
+                {
+}
+            ).addTo(map_19963c88815a614fa485af3da4f96c56);
+        
+    
+        var popup_2b38aee96201aea7ffb5b717d27c0eaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98062347b35767f4741981abf245f000 = $(`<div id="html_98062347b35767f4741981abf245f000" style="width: 100.0%; height: 100.0%;">PEDRA PRETA</div>`)[0];
+                popup_2b38aee96201aea7ffb5b717d27c0eaa.setContent(html_98062347b35767f4741981abf245f000);
+            
+        
+
+        marker_ed2af66ace95e836125a8afa2a2e670a.bindPopup(popup_2b38aee96201aea7ffb5b717d27c0eaa)
+        ;
+
+        
+    
+    
+            marker_ed2af66ace95e836125a8afa2a2e670a.bindTooltip(
+                `<div>
+                     PEDRA PRETA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

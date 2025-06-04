@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4e7ead54560fd5586fd686d7eab8e8df {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4e7ead54560fd5586fd686d7eab8e8df" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4e7ead54560fd5586fd686d7eab8e8df = L.map(
+                "map_4e7ead54560fd5586fd686d7eab8e8df",
+                {
+                    center: [-23.2036, -52.4743],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9dcee3fe855979784f2e485377a6ede = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a9dcee3fe855979784f2e485377a6ede.addTo(map_4e7ead54560fd5586fd686d7eab8e8df);
+        
+    
+        function geo_json_6bbe28bae375d06e80461b967d0e02af_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_6bbe28bae375d06e80461b967d0e02af_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_6bbe28bae375d06e80461b967d0e02af = L.geoJson(null, {
+                onEachFeature: geo_json_6bbe28bae375d06e80461b967d0e02af_onEachFeature,
+            
+                style: geo_json_6bbe28bae375d06e80461b967d0e02af_styler,
+            ...{
+}
+        });
+
+        function geo_json_6bbe28bae375d06e80461b967d0e02af_add (data) {
+            geo_json_6bbe28bae375d06e80461b967d0e02af
+                .addData(data);
+        }
+            geo_json_6bbe28bae375d06e80461b967d0e02af_add({"features": [{"geometry": {"coordinates": [[[-52.4859374, -23.1307846], [-52.4843205, -23.1307526], [-52.4211147, -23.1309912], [-52.4209148, -23.14106], [-52.4206778, -23.1969788], [-52.420669, -23.1990467], [-52.4205196, -23.2341079], [-52.4207601, -23.2507817], [-52.4209818, -23.2516271], [-52.4212406, -23.2660741], [-52.4439772, -23.2660879], [-52.4505921, -23.266092], [-52.4691692, -23.2660957], [-52.4790237, -23.2660977], [-52.5446837, -23.266111], [-52.544807, -23.2666367], [-52.5453835, -23.2670085], [-52.5462237, -23.2672185], [-52.5468817, -23.2678295], [-52.5469313, -23.1965628], [-52.5469317, -23.1959275], [-52.5469431, -23.1792831], [-52.5469201, -23.1373324], [-52.5469198, -23.1367631], [-52.5469169, -23.1309236], [-52.5256016, -23.1309922], [-52.5003161, -23.1310689], [-52.4859374, -23.1307846]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_6bbe28bae375d06e80461b967d0e02af.addTo(map_4e7ead54560fd5586fd686d7eab8e8df);
+        
+    
+            map_4e7ead54560fd5586fd686d7eab8e8df.fitBounds(
+                [[-23.2678295, -52.5469431], [-23.1307526, -52.4205196]],
+                {}
+            );
+        
+    
+            var marker_0a53c72454da13f25e121f9a1c508ea3 = L.marker(
+                [-23.2036, -52.4743],
+                {
+}
+            ).addTo(map_4e7ead54560fd5586fd686d7eab8e8df);
+        
+    
+        var popup_531cd1b1e6760e322e2c4c9bd8141f56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd7017aea86790d905dcd6eef4ee1bd0 = $(`<div id="html_dd7017aea86790d905dcd6eef4ee1bd0" style="width: 100.0%; height: 100.0%;">TAMBOARA</div>`)[0];
+                popup_531cd1b1e6760e322e2c4c9bd8141f56.setContent(html_dd7017aea86790d905dcd6eef4ee1bd0);
+            
+        
+
+        marker_0a53c72454da13f25e121f9a1c508ea3.bindPopup(popup_531cd1b1e6760e322e2c4c9bd8141f56)
+        ;
+
+        
+    
+    
+            marker_0a53c72454da13f25e121f9a1c508ea3.bindTooltip(
+                `<div>
+                     TAMBOARA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

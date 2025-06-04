@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a0ab2c02b827961b9429933ee323593 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5a0ab2c02b827961b9429933ee323593" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5a0ab2c02b827961b9429933ee323593 = L.map(
+                "map_5a0ab2c02b827961b9429933ee323593",
+                {
+                    center: [-4.83151, -37.781],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a98f782b869faca90943b112bf2f3d9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0a98f782b869faca90943b112bf2f3d9.addTo(map_5a0ab2c02b827961b9429933ee323593);
+        
+    
+        function geo_json_5f34c3d8502e1d08e0e1573b98058d2d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_5f34c3d8502e1d08e0e1573b98058d2d_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_5f34c3d8502e1d08e0e1573b98058d2d = L.geoJson(null, {
+                onEachFeature: geo_json_5f34c3d8502e1d08e0e1573b98058d2d_onEachFeature,
+            
+                style: geo_json_5f34c3d8502e1d08e0e1573b98058d2d_styler,
+            ...{
+}
+        });
+
+        function geo_json_5f34c3d8502e1d08e0e1573b98058d2d_add (data) {
+            geo_json_5f34c3d8502e1d08e0e1573b98058d2d
+                .addData(data);
+        }
+            geo_json_5f34c3d8502e1d08e0e1573b98058d2d_add({"features": [{"geometry": {"coordinates": [[[-37.8744759, -4.9394745], [-37.8721301, -4.9240317], [-37.8747005, -4.9194701], [-37.8866515, -4.9053728], [-37.8865794, -4.9032416], [-37.8858225, -4.8808554], [-37.8844367, -4.8649153], [-37.8835048, -4.8541954], [-37.883542, -4.8533292], [-37.8842244, -4.8518226], [-37.8845591, -4.8514044], [-37.8851087, -4.8508548], [-37.8855247, -4.8505074], [-37.8860413, -4.8495641], [-37.8860941, -4.8494941], [-37.8864019, -4.8490862], [-37.8874273, -4.8482142], [-37.8885618, -4.8474048], [-37.8885654, -4.8474049], [-37.8889078, -4.847415], [-37.8897504, -4.8473804], [-37.8931693, -4.8388934], [-37.9004355, -4.8208553], [-37.9004471, -4.8208359], [-37.9337665, -4.7636224], [-37.856361, -4.7633123], [-37.8316497, -4.7632133], [-37.8300869, -4.763207], [-37.8299945, -4.7625821], [-37.8297566, -4.7616461], [-37.8293302, -4.7603936], [-37.8287772, -4.7595075], [-37.8282691, -4.7587676], [-37.8280731, -4.7584821], [-37.827383, -4.7566602], [-37.8265795, -4.7548254], [-37.82604, -4.7533325], [-37.8258396, -4.7525861], [-37.825879, -4.7516505], [-37.8261801, -4.7505679], [-37.8266274, -4.7488322], [-37.8264039, -4.746834], [-37.8258295, -4.7436972], [-37.8256309, -4.7434124], [-37.8255168, -4.7431609], [-37.8253956, -4.742931], [-37.8253351, -4.7427021], [-37.8253262, -4.7423192], [-37.8251491, -4.742014], [-37.8068733, -4.7358062], [-37.7885724, -4.7295893], [-37.7894367, -4.7310864], [-37.7900655, -4.7322587], [-37.7902676, -4.7333373], [-37.7910022, -4.7347104], [-37.7916472, -4.7355892], [-37.7923843, -4.7369306], [-37.7929133, -4.7385443], [-37.7930522, -4.7399126], [-37.7932613, -4.7444849], [-37.7924603, -4.7475314], [-37.7920236, -4.7490546], [-37.790572, -4.7518822], [-37.7894099, -4.7545653], [-37.7887298, -4.756712], [-37.7822339, -4.7552544], [-37.780817, -4.7549365], [-37.7119368, -4.7394803], [-37.6249576, -4.7199629], [-37.6162718, -4.7180139], [-37.6143409, -4.7455675], [-37.6115132, -4.7682183], [-37.58869, -4.8082817], [-37.5919715, -4.815788], [-37.6403381, -4.9264044], [-37.6504543, -4.9627033], [-37.65124, -4.9655228], [-37.6601213, -4.9973913], [-37.6601424, -4.9974672], [-37.6602634, -4.9979013], [-37.6602638, -4.9979028], [-37.6602658, -4.99791], [-37.6603707, -4.9982495], [-37.6769796, -5.0520116], [-37.6770622, -5.052279], [-37.6772438, -5.0528668], [-37.677331, -5.0528103], [-37.6778318, -5.0524863], [-37.6781246, -5.0522565], [-37.6783726, -5.0520566], [-37.8095329, -4.9891616], [-37.8196935, -4.9842893], [-37.8744759, -4.9394745]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_5f34c3d8502e1d08e0e1573b98058d2d.addTo(map_5a0ab2c02b827961b9429933ee323593);
+        
+    
+            map_5a0ab2c02b827961b9429933ee323593.fitBounds(
+                [[-5.0528668, -37.9337665], [-4.7180139, -37.58869]],
+                {}
+            );
+        
+    
+            var marker_40b8298ad133cb3e1c4ddcc6e95dcfa8 = L.marker(
+                [-4.83151, -37.781],
+                {
+}
+            ).addTo(map_5a0ab2c02b827961b9429933ee323593);
+        
+    
+        var popup_a420b7946b256ddc4769094981d075ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89e43f70f4105835d181c0f3deb3574e = $(`<div id="html_89e43f70f4105835d181c0f3deb3574e" style="width: 100.0%; height: 100.0%;">JAGUARUANA</div>`)[0];
+                popup_a420b7946b256ddc4769094981d075ef.setContent(html_89e43f70f4105835d181c0f3deb3574e);
+            
+        
+
+        marker_40b8298ad133cb3e1c4ddcc6e95dcfa8.bindPopup(popup_a420b7946b256ddc4769094981d075ef)
+        ;
+
+        
+    
+    
+            marker_40b8298ad133cb3e1c4ddcc6e95dcfa8.bindTooltip(
+                `<div>
+                     JAGUARUANA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
