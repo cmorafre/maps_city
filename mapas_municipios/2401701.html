@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a131f47a1d9423b9ae3806f1b6dd4039 {
+                #map_fe030e48e08b6754d005b70efe468351 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,20 +54,20 @@
 <body>
     
     
-            <div class="folium-map" id="map_a131f47a1d9423b9ae3806f1b6dd4039" ></div>
+            <div class="folium-map" id="map_fe030e48e08b6754d005b70efe468351" ></div>
         
 </body>
 <script>
     
     
-            var map_a131f47a1d9423b9ae3806f1b6dd4039 = L.map(
-                "map_a131f47a1d9423b9ae3806f1b6dd4039",
+            var map_fe030e48e08b6754d005b70efe468351 = L.map(
+                "map_fe030e48e08b6754d005b70efe468351",
                 {
                     center: [-5.98648, -35.5792],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 10,
-  "zoomControl": true,
+  "zoomControl": false,
   "preferCanvas": false,
 }
 
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_edc9ad0b05dd9981fe02e82a2cc037f2 = L.tileLayer(
+            var tile_layer_d86123c3638b082da7ce4a4ee9fa9fa8 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,71 +95,71 @@
             );
         
     
-            tile_layer_edc9ad0b05dd9981fe02e82a2cc037f2.addTo(map_a131f47a1d9423b9ae3806f1b6dd4039);
+            tile_layer_d86123c3638b082da7ce4a4ee9fa9fa8.addTo(map_fe030e48e08b6754d005b70efe468351);
         
     
-        function geo_json_4f1538dde1cf747211e2964930273ba7_styler(feature) {
+        function geo_json_7e34a3e943d085d4ee2f2f07536efb1e_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "black", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1};
             }
         }
 
-        function geo_json_4f1538dde1cf747211e2964930273ba7_onEachFeature(feature, layer) {
+        function geo_json_7e34a3e943d085d4ee2f2f07536efb1e_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_4f1538dde1cf747211e2964930273ba7 = L.geoJson(null, {
-                onEachFeature: geo_json_4f1538dde1cf747211e2964930273ba7_onEachFeature,
+        var geo_json_7e34a3e943d085d4ee2f2f07536efb1e = L.geoJson(null, {
+                onEachFeature: geo_json_7e34a3e943d085d4ee2f2f07536efb1e_onEachFeature,
             
-                style: geo_json_4f1538dde1cf747211e2964930273ba7_styler,
+                style: geo_json_7e34a3e943d085d4ee2f2f07536efb1e_styler,
             ...{
 }
         });
 
-        function geo_json_4f1538dde1cf747211e2964930273ba7_add (data) {
-            geo_json_4f1538dde1cf747211e2964930273ba7
+        function geo_json_7e34a3e943d085d4ee2f2f07536efb1e_add (data) {
+            geo_json_7e34a3e943d085d4ee2f2f07536efb1e
                 .addData(data);
         }
-            geo_json_4f1538dde1cf747211e2964930273ba7_add({"features": [{"geometry": {"coordinates": [[[-35.5397508, -6.0015896], [-35.5412396, -6.0053314], [-35.5577292, -6.0467766], [-35.5707786, -6.0795447], [-35.6225572, -6.0366749], [-35.6474828, -6.0160379], [-35.6501929, -5.9764352], [-35.6061548, -5.9515071], [-35.601414, -5.9488236], [-35.5722267, -5.9323081], [-35.5559185, -5.9482014], [-35.5556165, -5.9484955], [-35.5470404, -5.970715], [-35.5435333, -5.9798014], [-35.5410272, -5.9862944], [-35.5409506, -5.9864929], [-35.5408644, -5.986713], [-35.5374012, -5.9956844], [-35.5374835, -5.9958909], [-35.5397508, -6.0015896]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_7e34a3e943d085d4ee2f2f07536efb1e_add({"features": [{"geometry": {"coordinates": [[[-35.5397508, -6.0015896], [-35.5412396, -6.0053314], [-35.5577292, -6.0467766], [-35.5707786, -6.0795447], [-35.6225572, -6.0366749], [-35.6474828, -6.0160379], [-35.6501929, -5.9764352], [-35.6061548, -5.9515071], [-35.601414, -5.9488236], [-35.5722267, -5.9323081], [-35.5559185, -5.9482014], [-35.5556165, -5.9484955], [-35.5470404, -5.970715], [-35.5435333, -5.9798014], [-35.5410272, -5.9862944], [-35.5409506, -5.9864929], [-35.5408644, -5.986713], [-35.5374012, -5.9956844], [-35.5374835, -5.9958909], [-35.5397508, -6.0015896]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-            geo_json_4f1538dde1cf747211e2964930273ba7.addTo(map_a131f47a1d9423b9ae3806f1b6dd4039);
+            geo_json_7e34a3e943d085d4ee2f2f07536efb1e.addTo(map_fe030e48e08b6754d005b70efe468351);
         
     
-            map_a131f47a1d9423b9ae3806f1b6dd4039.fitBounds(
+            map_fe030e48e08b6754d005b70efe468351.fitBounds(
                 [[-6.0795447, -35.6501929], [-5.9323081, -35.5374012]],
                 {}
             );
         
     
-            var marker_448dcecad53bea78b8700f39abda7f87 = L.marker(
+            var marker_ef8f25ba91dc8926539c7e1211096141 = L.marker(
                 [-5.98648, -35.5792],
                 {
 }
-            ).addTo(map_a131f47a1d9423b9ae3806f1b6dd4039);
+            ).addTo(map_fe030e48e08b6754d005b70efe468351);
         
     
-        var popup_ebcd2c2afbc37dc4b96631d735990402 = L.popup({
+        var popup_6f6d144538c0bad9e9d33f28477e5a65 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a3251b5b2005ddf2c50e8babf91fe8cb = $(`<div id="html_a3251b5b2005ddf2c50e8babf91fe8cb" style="width: 100.0%; height: 100.0%;">BOM JESUS</div>`)[0];
-                popup_ebcd2c2afbc37dc4b96631d735990402.setContent(html_a3251b5b2005ddf2c50e8babf91fe8cb);
+                var html_a2de17e9c0a9bc5beded41101adcf1b2 = $(`<div id="html_a2de17e9c0a9bc5beded41101adcf1b2" style="width: 100.0%; height: 100.0%;">BOM JESUS</div>`)[0];
+                popup_6f6d144538c0bad9e9d33f28477e5a65.setContent(html_a2de17e9c0a9bc5beded41101adcf1b2);
             
         
 
-        marker_448dcecad53bea78b8700f39abda7f87.bindPopup(popup_ebcd2c2afbc37dc4b96631d735990402)
+        marker_ef8f25ba91dc8926539c7e1211096141.bindPopup(popup_6f6d144538c0bad9e9d33f28477e5a65)
         ;
 
         
     
     
-            marker_448dcecad53bea78b8700f39abda7f87.bindTooltip(
+            marker_ef8f25ba91dc8926539c7e1211096141.bindTooltip(
                 `<div>
                      BOM JESUS
                  </div>`,

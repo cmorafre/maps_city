@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_cfac6995c450aadae5c0a41cfccbfa3e {
+                #map_571236fdbce71406ccf4baf8f3bc0724 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,20 +54,20 @@
 <body>
     
     
-            <div class="folium-map" id="map_cfac6995c450aadae5c0a41cfccbfa3e" ></div>
+            <div class="folium-map" id="map_571236fdbce71406ccf4baf8f3bc0724" ></div>
         
 </body>
 <script>
     
     
-            var map_cfac6995c450aadae5c0a41cfccbfa3e = L.map(
-                "map_cfac6995c450aadae5c0a41cfccbfa3e",
+            var map_571236fdbce71406ccf4baf8f3bc0724 = L.map(
+                "map_571236fdbce71406ccf4baf8f3bc0724",
                 {
                     center: [-6.0119, -35.8729],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 10,
-  "zoomControl": true,
+  "zoomControl": false,
   "preferCanvas": false,
 }
 
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_b9c993da6b7b40520fb0885ff43ea6ee = L.tileLayer(
+            var tile_layer_3dbfb6ce70f142705823df74c31c8dcd = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,71 +95,71 @@
             );
         
     
-            tile_layer_b9c993da6b7b40520fb0885ff43ea6ee.addTo(map_cfac6995c450aadae5c0a41cfccbfa3e);
+            tile_layer_3dbfb6ce70f142705823df74c31c8dcd.addTo(map_571236fdbce71406ccf4baf8f3bc0724);
         
     
-        function geo_json_b1ece4d96f79452ab819c80b5a6a9322_styler(feature) {
+        function geo_json_03b0fef4546070e3789b31ce607b1e60_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "black", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1};
             }
         }
 
-        function geo_json_b1ece4d96f79452ab819c80b5a6a9322_onEachFeature(feature, layer) {
+        function geo_json_03b0fef4546070e3789b31ce607b1e60_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_b1ece4d96f79452ab819c80b5a6a9322 = L.geoJson(null, {
-                onEachFeature: geo_json_b1ece4d96f79452ab819c80b5a6a9322_onEachFeature,
+        var geo_json_03b0fef4546070e3789b31ce607b1e60 = L.geoJson(null, {
+                onEachFeature: geo_json_03b0fef4546070e3789b31ce607b1e60_onEachFeature,
             
-                style: geo_json_b1ece4d96f79452ab819c80b5a6a9322_styler,
+                style: geo_json_03b0fef4546070e3789b31ce607b1e60_styler,
             ...{
 }
         });
 
-        function geo_json_b1ece4d96f79452ab819c80b5a6a9322_add (data) {
-            geo_json_b1ece4d96f79452ab819c80b5a6a9322
+        function geo_json_03b0fef4546070e3789b31ce607b1e60_add (data) {
+            geo_json_03b0fef4546070e3789b31ce607b1e60
                 .addData(data);
         }
-            geo_json_b1ece4d96f79452ab819c80b5a6a9322_add({"features": [{"geometry": {"coordinates": [[[-35.8788395, -6.0387526], [-35.881273, -6.0372638], [-35.9248041, -6.0106325], [-35.8984622, -5.9920383], [-35.8652004, -5.9685642], [-35.834772, -5.9470964], [-35.7783375, -6.015875], [-35.7986908, -6.0425774], [-35.8053532, -6.0433243], [-35.8225271, -6.0731758], [-35.871654, -6.0431486], [-35.8788395, -6.0387526]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_03b0fef4546070e3789b31ce607b1e60_add({"features": [{"geometry": {"coordinates": [[[-35.8788395, -6.0387526], [-35.881273, -6.0372638], [-35.9248041, -6.0106325], [-35.8984622, -5.9920383], [-35.8652004, -5.9685642], [-35.834772, -5.9470964], [-35.7783375, -6.015875], [-35.7986908, -6.0425774], [-35.8053532, -6.0433243], [-35.8225271, -6.0731758], [-35.871654, -6.0431486], [-35.8788395, -6.0387526]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-            geo_json_b1ece4d96f79452ab819c80b5a6a9322.addTo(map_cfac6995c450aadae5c0a41cfccbfa3e);
+            geo_json_03b0fef4546070e3789b31ce607b1e60.addTo(map_571236fdbce71406ccf4baf8f3bc0724);
         
     
-            map_cfac6995c450aadae5c0a41cfccbfa3e.fitBounds(
+            map_571236fdbce71406ccf4baf8f3bc0724.fitBounds(
                 [[-6.0731758, -35.9248041], [-5.9470964, -35.7783375]],
                 {}
             );
         
     
-            var marker_cfd0a9def00b189fc5e2599c5ff5f3e4 = L.marker(
+            var marker_e50121b230916ae67330c204e323d051 = L.marker(
                 [-6.0119, -35.8729],
                 {
 }
-            ).addTo(map_cfac6995c450aadae5c0a41cfccbfa3e);
+            ).addTo(map_571236fdbce71406ccf4baf8f3bc0724);
         
     
-        var popup_e8d1f5391a645baea5a49bd38381173b = L.popup({
+        var popup_cf548a6335617598aab77939893dc314 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_c77356a120294d531b8cb6ab8c1012e7 = $(`<div id="html_c77356a120294d531b8cb6ab8c1012e7" style="width: 100.0%; height: 100.0%;">LAGOA DE VELHOS</div>`)[0];
-                popup_e8d1f5391a645baea5a49bd38381173b.setContent(html_c77356a120294d531b8cb6ab8c1012e7);
+                var html_f01438e12b7ac0735f44078e997c4e57 = $(`<div id="html_f01438e12b7ac0735f44078e997c4e57" style="width: 100.0%; height: 100.0%;">LAGOA DE VELHOS</div>`)[0];
+                popup_cf548a6335617598aab77939893dc314.setContent(html_f01438e12b7ac0735f44078e997c4e57);
             
         
 
-        marker_cfd0a9def00b189fc5e2599c5ff5f3e4.bindPopup(popup_e8d1f5391a645baea5a49bd38381173b)
+        marker_e50121b230916ae67330c204e323d051.bindPopup(popup_cf548a6335617598aab77939893dc314)
         ;
 
         
     
     
-            marker_cfd0a9def00b189fc5e2599c5ff5f3e4.bindTooltip(
+            marker_e50121b230916ae67330c204e323d051.bindTooltip(
                 `<div>
                      LAGOA DE VELHOS
                  </div>`,
